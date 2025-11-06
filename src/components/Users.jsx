@@ -14,7 +14,7 @@ function Users() {
   useEffect(() => {
     // PHP API se data fetch karna
     let uid = sessionStorage.getItem('userid');
-    fetch(`http://localhost/chatapp/backend/apis.php?action=mambers&uid=${uid}`)
+    fetch(`https://abhyuday.fivedollarsaas.com/apis/chatapis/apis.php?action=mambers&uid=${uid}`)
       .then((response) => response.json())
       .then((data) => {
         

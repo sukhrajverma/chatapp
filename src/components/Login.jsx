@@ -25,7 +25,7 @@ function Login() {
             formData.append('user_phone', phone);
             formData.append('user_pass', pass);
 
-            let response = await fetch('http://localhost/chatapp/backend/apis.php',{
+            let response = await fetch('https://abhyuday.fivedollarsaas.com/apis/chatapis/apis.php',{
                 method : 'POST',
                 body : formData
                 

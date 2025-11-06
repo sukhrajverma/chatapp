@@ -17,7 +17,7 @@ function Chat() {
   }, [messages]);*/
 
   function getChats(){
-    fetch(`http://localhost/chatapp/backend/apis.php?action=chats&fid=${fid}&toid=${uid}`)
+    fetch(`https://abhyuday.fivedollarsaas.com/apis/chatapis/apis.php?action=chats&fid=${fid}&toid=${uid}`)
         .then((response) => response.json())
         .then((data) => {
           
@@ -41,7 +41,7 @@ function Chat() {
 
     setInput("");
 
-    fetch(`http://localhost/chatapp/backend/apis.php?action=send&fid=${fid}&toid=${uid}&message=${input}`)
+    fetch(`https://abhyuday.fivedollarsaas.com/apis/chatapis/apis.php?action=send&fid=${fid}&toid=${uid}&message=${input}`)
         .then((response) => response.json())
         .then((data) => {
           console.log('Message sent sucessfully!');
